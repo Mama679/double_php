@@ -94,7 +94,7 @@ class UsuarioController extends Controller
     {
         //$users = Usuario::all()->paginate(10);
         $users = Usuario::select("*")
-                         ->get()->paginate(10);
+                         ->get();
 
         return response()->json([
             'status' => 1,
