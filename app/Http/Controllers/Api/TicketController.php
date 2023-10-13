@@ -5,7 +5,6 @@ namespace App\Http\Controllers\api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use App\Models\Alumno;
 use App\Models\Ticket;
 
 class TicketController extends Controller
@@ -108,7 +107,7 @@ class TicketController extends Controller
         {
             return response()->json([
                 "status" => 0,
-                "mensaje" =>"No se encontro Alumno."
+                "mensaje" =>"No se encontro Ticket."
             ],Response::HTTP_NOT_FOUND);
         }
     }
